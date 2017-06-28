@@ -88,17 +88,17 @@ function displayBio() {
 
   // Fill topContacts
   var mobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-  $("#topContacts").append(mobile);
+  $("#topContacts, #footerContacts").append(mobile);
   var email = HTMLemail.replace("%data%", bio.contacts.email);
-  $("#topContacts").append(email);
+  $("#topContacts, #footerContacts").append(email);
   var github = HTMLgithub.replace("%data%", bio.contacts.github);
-  $("#topContacts").append(github);
+  $("#topContacts, #footerContacts").append(github);
   if (bio.contacts.twitter) {
     var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    $("#topContacts").append(twitter);
+    $("#topContacts, #footerContacts").append(twitter);
   }
   var location = HTMLlocation.replace("%data%", bio.contacts.location);
-  $("#topContacts").append(location);
+  $("#topContacts, #footerContacts").append(location);
 
   var myPic = HTMLbioPic.replace("%data%", bio.biopic);
   var welcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
